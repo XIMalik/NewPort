@@ -29,7 +29,7 @@ const Me = () => {
     }, []);
     return (
         <div className='major-element me flex flex-col items-center justify-center font-normal'>
-            <div className="absolute top-[100px]">
+            <div className="absolute top-[150px]">
                 <motion.div
                     initial={{ opacity: 0 }}  // Initially the opacity is 0 (hidden)
                     whileInView={{ opacity: 1 }}  // When the element is in view, opacity becomes 1 (fully visible)
@@ -40,12 +40,11 @@ const Me = () => {
                     <h1 className='julius font-bold text-[100px] md:hidden text-center uppercase text-white/10'>malik <br /> awesu</h1>
                 </motion.div>
             </div>
-            <div className="animate-[subtleBounce_2s_ease-in-out_infinite]">
+            <div className="absolute top-[100px] animate-[subtleBounce_2s_ease-in-out_infinite]">
                 <img src={avatar} alt="" />
             </div>
-            <div className="w-full ">
-
-                <div className="w-full mt-10 flex flex-col md:flex-row gap-10 text-[#9BC59D] justify-between text-md leading-loose">
+            <div className="w-full">
+                <div className="w-full mt-[500px] lg:mt-[550px] flex flex-col md:flex-row gap-10 text-[#9BC59D] justify-between text-md leading-loose">
                     {/* First Paragraph with Fade In */}
                     <motion.p
                         className='w-full md:w-[50%]'
@@ -53,7 +52,7 @@ const Me = () => {
                         whileInView={{ opacity: 1 }}  // When the element is in view, opacity becomes 1 (fully visible)
                         viewport={{ amount: 0.8 }}  // Trigger animation when 80% of the element is in view transition={{ duration: 1 }} // Duration of fade-in effect
                     >
-                        <p>Hey, welcome to my space. I'm Malik Awesu, a fullstack web developer with a keen eye for clean UI, efficient development, and scalable code. I specialize in building modern web applications.</p>
+                        <p>Hey, I'm Malik Awesu, a fullstack web developer with a keen eye for clean UI, efficient development, and scalable code. I specialize in building modern web applications.</p>
                     </motion.p>
 
                     {/* Second Paragraph with Fade In and Delay */}
