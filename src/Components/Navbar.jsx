@@ -7,7 +7,7 @@ import logo from "/logo.png"
 
 const Navbar = () => {
     // State to track if the menu is open or closed
-    const [menuOpen, setMenuOpen] = useState(true);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const location = useLocation(); // Get the current route
 

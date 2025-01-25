@@ -69,7 +69,7 @@ const Landing = () => {
                     transition={{ duration: 0.8 }}
                 >
 
-                    <h1 className='text-[120px] julius text-[#9BC59D]'>Malik Awesu</h1>
+                    <h1 className='text-[70px] mt-2 mb-[80px] md:text-[120px] julius text-[#9BC59D]'>Malik Awesu</h1>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, scale: 1 }}

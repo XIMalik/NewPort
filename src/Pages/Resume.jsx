@@ -20,7 +20,7 @@ const Resume = () => {
                     viewport={{ amount: 0.8 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h1 className='julius font-bold text-[100px] md:text-[240px] uppercase text-white/10 mt-10 md:mt-0'>resume</h1>
+                    <h1 className='julius font-bold text-[90px] md:text-[240px] uppercase text-white/10 mt-10 md:mt-0'>resume</h1>
                 </motion.div>
             </div>
             <motion.div
