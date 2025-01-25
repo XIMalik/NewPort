@@ -14,6 +14,9 @@ const NameShape = () => {
       "text-teal-600",
       "text-[#8BAAAD]",
       "text-orange-600",
+      "text-slate-200", 
+      "text-slate-700",
+      "text-red-300"
     ];
     // Pick a random color from the array
     return colors[Math.floor(Math.random() * colors.length)];
@@ -22,11 +25,14 @@ const NameShape = () => {
   // Array of texts and their corresponding classes for styling
   const texts = [
     { text: "Malik Awesu", className: `jose uppercase ${getRandomColor()}` },
-    { text: "Malik Awesu", className: `syncopate-regular uppercase ${getRandomColor()}` },
-    { text: "Malik Awesu", className: `kolker-brush-regular uppercase ${getRandomColor()}` },
-    { text: "Malik Awesu", className: `kranky-regular uppercase ${getRandomColor()}` },
-    { text: "Malik Awesu", className: `kings-regular uppercase ${getRandomColor()}` },
     { text: "Malik Awesu", className: `libre-barcode-39-text-regular uppercase ${getRandomColor()}` },
+    { text: "マリク・アウェス", className: `kolker-brush-regular uppercase ${getRandomColor()}` },
+    { text: "Malik Awesu", className: `kranky-regular uppercase ${getRandomColor()}` },
+    { text: "马利克·奥维苏", className: `kings-regular uppercase ${getRandomColor()}` },
+    { text: "מאליק אאוסו", className: `uppercase ${getRandomColor()}` },
+    { text: "مالك عويسو", className: `uppercase ${getRandomColor()}` },
+    { text: "Malik Awesu", className: `syncopate-regular uppercase ${getRandomColor()}` },
+
   ];
 
   // State to track the current text index
@@ -36,7 +42,7 @@ const NameShape = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    }, 2000); // Change text every 2 seconds
+    }, 400); // Change text every 2 seconds
 
     return () => clearInterval(intervalId); // Clean up interval on unmount
   }, [texts.length]);

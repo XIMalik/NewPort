@@ -16,8 +16,8 @@ const Contact = React.lazy(() => import('./Pages/Contact'));
 function App() {
   return (
     <Router>
-      <Navbar />
       <Suspense fallback={<NameShape />}>
+        <Navbar />
         <PageTransitions />
       </Suspense>
       <Footer />
