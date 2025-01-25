@@ -23,9 +23,6 @@ import { TbBrandGithubFilled } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
 import { MdOutlinePhonelink } from "react-icons/md";
 
-
-
-
 const Me = () => {
     useEffect(() => {
         document.title = "About me - Malik Awesu";
@@ -39,7 +36,8 @@ const Me = () => {
                     viewport={{ amount: 0.8 }}  // Trigger animation when 80% of the element is in view
                     transition={{ duration: 0.8 }} // Optional: smooth transition for opacity change
                 >
-                    <h1 className='julius font-bold text-[100px] lg:text-[150px] text-center uppercase text-white/10'>malik awesu</h1>
+                    <h1 className='julius font-bold hidden md:flex md:text-[125px] lg:text-[140px] text-center uppercase text-white/10'>malik awesu</h1>
+                    <h1 className='julius font-bold text-[100px] md:hidden text-center uppercase text-white/10'>malik <br /> awesu</h1>
                 </motion.div>
             </div>
             <div className="animate-[subtleBounce_2s_ease-in-out_infinite]">
@@ -65,9 +63,9 @@ const Me = () => {
                         whileInView={{ opacity: 1 }}  // When the element is in view, opacity becomes 1 (fully visible)
                         viewport={{ amount: 0.8 }}  // Trigger animation when 80% of the element is in view
                     >
-As a developer, I'm committed to continuous learning and creating innovative solutions. My focus is on building products that deliver value and provide a great user experience.                    </motion.p>
+                        As a developer, I'm committed to continuous learning and creating innovative solutions. My focus is on building products that deliver value and provide a great user experience.                    </motion.p>
                 </div>
-                <div className="me-info mt-[100px] w-full flex flex-col gap-10 items-start md:flex-row md:items-end justify-between text-left">
+                <div className="me-info mt-[100px] w-full flex flex-col gap-10 md:gap-0 items-start md:flex-row md:items-end justify-between text-left">
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
@@ -78,7 +76,7 @@ As a developer, I'm committed to continuous learning and creating innovative sol
                             When I'm not coding, you can find me unwinding with some PS4 gaming, hitting the basketball court or gym, or enjoying a football match.</h1>
 
                     </motion.div>
-                    <div className="flex gap-5">
+                    <div className="flex gap-5 flex-wrap md:flex-nowrap w-fit">
                         <MdOutlinePhonelink className='text-[50px] text-[#9BC59D]' />
                         <FaCode className='text-[50px] text-[#9BC59D]' />
                         <PiGameControllerFill className='text-[50px] text-[#9BC59D]' />
@@ -99,7 +97,7 @@ As a developer, I'm committed to continuous learning and creating innovative sol
                         </div>
 
                     </motion.div>
-                    <div className="flex gap-5">
+                    <div className="flex gap-5 flex-wrap md:flex-nowrap w-fit">
                         <FaReact className='text-[50px] text-[#9BC59D] rounded-none' />
                         <RiTailwindCssFill className='text-[50px] text-[#9BC59D] rounded-none' />
                         <FaHtml5 className='text-[50px] text-[#9BC59D] rounded-none' />
@@ -119,7 +117,7 @@ As a developer, I'm committed to continuous learning and creating innovative sol
                         </div>
 
                     </motion.div>
-                    <div className="flex gap-5">
+                    <div className="flex gap-5 flex-wrap md:flex-nowrap w-fit">
                         <FaPython className='text-[50px] text-[#9BC59D] rounded-none' />
                         <SiDjango className='text-[50px] text-[#9BC59D] rounded-none' />
                         <BiLogoPostgresql className='text-[50px] text-[#9BC59D] rounded-none' />
@@ -138,7 +136,7 @@ As a developer, I'm committed to continuous learning and creating innovative sol
                         </div>
 
                     </motion.div>
-                    <div className="flex gap-5">
+                    <div className="flex gap-5 flex-wrap md:flex-nowrap w-fit">
                         <FaDocker className='text-[50px] text-[#9BC59D] rounded-none' />
                         <BiLogoNetlify className='text-[50px] text-[#9BC59D] rounded-none' />
                         <IoLogoVercel className='text-[50px] text-[#9BC59D] rounded-none' />

@@ -94,7 +94,7 @@ const Portfolio = () => {
                 viewport={{ amount: 0.8 }}
                 transition={{ duration: 0.8 }}
             >
-                <h1 className='julius font-bold text-[70px] md:text-[100px] lg:text-[150px] uppercase text-white/10'>portfolio</h1>
+                <h1 className='julius font-bold text-[50px] md:text-[100px] lg:text-[150px] uppercase text-white/10'>portfolio</h1>
             </motion.div>
 
             <div className="filter-buttons my-4 flex gap-2 items-center">

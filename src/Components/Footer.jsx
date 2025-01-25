@@ -10,14 +10,14 @@ const Footer = () => {
     }
 
     return (
-        <div className='w-full flex items-center justify-between py-5 px-[50px] border-t-[#9BC59D]/10 border-t-[0.5px]'>
+        <div className='w-full flex items-center justify-between py-5 text-sm px-[50px] border-t-[#9BC59D]/10 border-t-[0.5px]'>
             <div className="div flex items-center gap-2">
-                <div className="w-[25px] h-[25px]">
+                <div className="w-[20px] h-[20px]">
                     <img src={logo} alt="" className='object-cover h-full w-full' />
                 </div>
                 <h1>Malik Awesu</h1>
             </div>
-            <span className='uppercase text-[#9BC59D]'>fullstack developer</span>
+            <span className='text-[#9BC59D] '>Fullstack Developer</span>
         </div>
     );
 }

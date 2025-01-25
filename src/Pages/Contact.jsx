@@ -56,7 +56,7 @@ const Contact = () => {
           <h1 className='julius font-bold text-[110px] lg:text-[150px] uppercase text-white/10'>Let's Talk</h1>
         </motion.div>
         <div className="bottom flex justify-between px-10 py-5 md:border-r-[#9BC59D] md:border-r-[0.5px] border-l-[#9BC59D] border-l-[0.5px] md:border-l-0">
-        <div className="text-left flex gap-5 rounded-none">
+          <div className="text-left flex gap-5 rounded-none">
             {icons.map((icon, index) => (
               <motion.a
                 key={index}
@@ -80,7 +80,7 @@ const Contact = () => {
         </div>
       </div>
       <span className='my-10 border-r-[0.5px] pr-10
-       border-r-[#9BC59D]'>Leave a message or reach me via any of my social media!</span>
+       border-r-[#9BC59D]'>Leave a message or reach me via either of my social media!</span>
       <div className="flex flex-col justify-between gap-[70px] w-full lg:flex-row-reverse items-center">
 
         <div className="w-full lg:w-[50%]">
@@ -162,6 +162,29 @@ const Contact = () => {
               </div>
             </motion.div>
           )}
+        </div>
+      </div>
+      <div className="bottom flex justify-between w-full items-center right-0 my-10 py-5 md:hidden border-r-[#9BC59D] border-r-[0.5px] border-l-0">
+        <div className="text-right w-full flex gap-5 rounded-none">
+          {icons.map((icon, index) => (
+            <motion.a
+              key={index}
+              href={icon.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={icon.className}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{
+                duration: 0.2,
+                delay: icon.delay,
+              }}
+            >
+              <icon.Icon className='rounded-none' />
+            </motion.a>
+          ))}
         </div>
       </div>
     </div>
