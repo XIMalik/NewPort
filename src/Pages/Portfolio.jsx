@@ -117,7 +117,7 @@ const Portfolio = () => {
                     ))}
                 </div>
             ) : (
-                <div className="projects grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full rounded-none my-10">
+                <div className="projects grid grid-cols-1 md:grid-cols-2 gap-4 w-full rounded-none my-10">
                     {filteredProjects.length > 0 ? (
                         filteredProjects.map(project => (
                             <Project
