@@ -117,7 +117,7 @@ const Portfolio = () => {
                     ))}
                 </div>
             ) : (
-                <div className="projects grid grid-cols-1 md:grid-cols-2 gap-4 w-full rounded-none my-10">
+                <div className="projects h-fit grid grid-cols-1 lg:grid-cols-2 gap-4 w-full rounded-none my-10">
                     {filteredProjects.length > 0 ? (
                         filteredProjects.map(project => (
                             <Project
@@ -131,7 +131,7 @@ const Portfolio = () => {
                             />
                         ))
                     ) : (
-                        <div className='flex items-center justify-center'>
+                        <div className='flex items-center'>
                             <AiOutlineRobot className='text-[150px] text-[#9BC59D] animate-[subtleBounce_2s_ease-in-out_infinite]' />
                             <h1>No <span className='line-through text-[#9BC59D]'>{filter}</span> projects at the moment</h1>
                         </div>
